@@ -23,6 +23,16 @@ class UserTokenController < Knock::AuthTokenController
 
                 when 'hs512' then
                     config.token_signature_algorithm = 'HS512'
+
+                when 'rs256' then
+                    config.token_signature_algorithm = 'RS256'
+
+                when 'rs384' then
+                    config.token_signature_algorithm = 'RS384'
+
+                when 'rs512' then
+                    config.token_signature_algorithm = 'RS512'
+
                 end
             end
         end
